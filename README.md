@@ -1,5 +1,5 @@
 # InvoiceManagementSystems
-[UML diagram](./Data/uml/gorsel.png)
+[UML diagram](./InvoiceManagementSystems/Data/uml/gorsel.png)
 
 As the administrator of a website, you are responsible for managing the condominiums' maintenance fees and shared utility bills (electricity, water, and natural gas) through a dedicated system. There are two types of users in the system:
 
