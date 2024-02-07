@@ -33,6 +33,10 @@ namespace InvoiceManagementSystems.Controllers
                 return BadRequest(ModelState);
 
             var user = _userRepository.GetUser(userid.Id);
+
+            if (user == null)
+                return NotFound("Kullanıcı bulunamadı.");
+
             return Ok(user);
         }
 

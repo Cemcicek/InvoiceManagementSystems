@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "m80kHe+S+DWXU00nrNc6DenrH1LdWNX0uruk53eczg2ceewuxiLH5axSHaWG2gStSZi5T75b18KX33cqm7jSCg==",
+  "dgSpecHash": "idqmqx/lFi0E8ka978LD9Zr1pNuYf/h2fmYuDtZDanASZ+SYPFGDcjcHb3TgDT8Ss5KutzXz7Yi7d2KVvfAjVg==",
   "success": true,
   "projectFilePath": "C:\\Users\\cicek\\OneDrive\\Belgeler\\GitHub\\InvoiceManagementSystems\\InvoiceManagementSystems.Tests\\InvoiceManagementSystems.Tests.csproj",
   "expectedPackageFiles": [
@@ -24,6 +24,7 @@
     "C:\\Users\\cicek\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.1\\microsoft.entityframeworkcore.8.0.1.nupkg.sha512",
     "C:\\Users\\cicek\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.1\\microsoft.entityframeworkcore.abstractions.8.0.1.nupkg.sha512",
     "C:\\Users\\cicek\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\8.0.1\\microsoft.entityframeworkcore.analyzers.8.0.1.nupkg.sha512",
+    "C:\\Users\\cicek\\.nuget\\packages\\microsoft.entityframeworkcore.inmemory\\8.0.1\\microsoft.entityframeworkcore.inmemory.8.0.1.nupkg.sha512",
     "C:\\Users\\cicek\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\8.0.1\\microsoft.entityframeworkcore.relational.8.0.1.nupkg.sha512",
     "C:\\Users\\cicek\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\8.0.1\\microsoft.entityframeworkcore.sqlserver.8.0.1.nupkg.sha512",
     "C:\\Users\\cicek\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",

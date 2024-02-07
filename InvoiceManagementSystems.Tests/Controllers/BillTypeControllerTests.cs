@@ -70,5 +70,6 @@ namespace InvoiceManagementSystems.Tests.Controllers
             var okResult = result as OkObjectResult;
             okResult.Value.Should().Be(fakeBillType);
         }
+     
     }
 }
