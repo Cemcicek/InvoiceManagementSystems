@@ -34,7 +34,7 @@ namespace InvoiceManagementSystems.Tests.Controllers
         public void UserController_GetUser_ReturnsOkWithUser()
         {
             // Arrange
-            var userMail = "test@example.com";
+            var userMail = "test@gmail.com";
             var userId = 1;
             var user = new User { Id = userId, FirstName = "Test", LastName = "User", Email = userMail };
             A.CallTo(() => _userRepository.GetUserByMail(userMail)).Returns(user);
@@ -65,7 +65,7 @@ namespace InvoiceManagementSystems.Tests.Controllers
         public void UserController_UpdateUser_ReturnsNoContent()
         {
             // Arrange
-            var userMail = "test@example.com";
+            var userMail = "test@gmail.com";
             var userId = 1;
             var updatedUser = new User { Id = userId, FirstName = "Updated", LastName = "User", Email = userMail };
             var existingUser = new User { Id = userId, FirstName = "Test", LastName = "User", Email = userMail };
