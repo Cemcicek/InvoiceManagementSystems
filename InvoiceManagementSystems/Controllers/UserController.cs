@@ -67,7 +67,7 @@ namespace InvoiceManagementSystems.Controllers
         }
 
 
-        //
+        
         [HttpPut]
         [Route("updateuserpassword")]
         public IActionResult UpdateUserPassword([FromBody] UserPasswordDto userPasswordDto)

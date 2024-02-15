@@ -62,13 +62,6 @@ namespace InvoiceManagementSystems.Controllers
         [HttpPut("{billTypeId}")]
         public IActionResult UpdateBillType(int billTypeId, [FromBody] BillType billType)
         {
-
-            if (billType == null)
-                return BadRequest(ModelState);
-
-            if (billTypeId != billType.Id)
-                return BadRequest(ModelState);
-
             if (!_billTypeRepository.BillTypeExists(billTypeId))
                 return NotFound();
 
