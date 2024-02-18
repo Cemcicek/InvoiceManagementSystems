@@ -165,5 +165,37 @@ namespace InvoiceManagementSystems.Tests.Controllers
             // Assert
             result.Should().BeOfType<BadRequestObjectResult>();
         }
+
+        [Fact]
+        public void ApartmentController_GetApartmentOfAUser_ReturnsOk_WithApartment()
+        {
+            // Arrange
+            var userEmail = "test@gmail.com";
+            var apartment = new Apartment { Id = 1, ApartmentNo = "1" };
+            A.CallTo(() => _apartmentRepository.GetApartmentOfAUser(userEmail)).Returns(apartment);
+
+            var controller = new ApartmentController(_apartmentRepository);
+
+            // Act
+            var result = controller.GetApartmentOfAUser();
+
+            // Assert
+            result.Should().BeOfType<OkObjectResult>();
+            var okResult = result as OkObjectResult;
+            okResult.Value.Should().BeOfType<Apartment>().And.BeEquivalentTo(apartment);
+        }
+
+        [Fact]
+        public void ApartmentController_GetApartmentOfAUser_ReturnsBadRequest_WhenUserMailIsNull()
+        {
+            // Arrange
+            var controller = new ApartmentController(_apartmentRepository);
+
+            // Act
+            var result = controller.GetApartmentOfAUser();
+
+            // Assert
+            result.Should().BeOfType<BadRequestResult>();
+        }
     }
 }
